@@ -461,8 +461,7 @@ h3{
     z-index: 2;
 }
 
-
-/* Projects cards*/
+/* Projects cards */
 /* General Styles */
 #proj {
     padding: 40px 0;
@@ -493,7 +492,7 @@ h3{
     text-align: center;
     text-decoration: none;
     color: #333;
-    width: calc(35% - 40px);  /* Increased width */
+    width: calc(35% - 40px);  /* Adjusted for desktop */
     transition: transform 0.2s;
 }
 
@@ -522,6 +521,27 @@ h3{
     color: #777;
     margin-bottom: 15px;
 }
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1200px) {
+    .proj-box {
+        width: calc(45% - 40px); /* Adjust for larger tablets */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .proj-box {
+        width: calc(60% - 40px); /* Adjust for tablets */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .proj-box {
+        width: calc(100% - 40px); /* Full width for mobile */
+        margin: 10px 0; /* Add margin between cards */
+    }
+}
+
 /* ----- CONTACT BOX ----- */
 .contact-info{
     position: relative;
@@ -772,6 +792,7 @@ footer{
     .project-box {
         width: 80%;
     }
+
 }
 
 /* ----- MEDIA QUERY == 768px / MOBILE PHONES ----- */
